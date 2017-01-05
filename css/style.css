@@ -1,0 +1,100 @@
+/*
+    Descomentar para qitar los bordes en pruebas
+
+* {
+    border: 1px dashed #6a9afb;
+}
+*/
+
+/* -- General -- */
+
+.header h1 {
+    text-align: center;
+    padding: 50px;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    font-size: 3.5em;
+}
+
+.menu-index {
+    text-align: center;
+}
+
+.menu-option {
+    padding: 25px;
+    margin: 0px;
+    border: 1px solid steelblue;
+    border-radius: 10px;
+}
+
+.menu-search {
+    padding: 25px;
+    border: 1px solid steelblue;
+    border-radius: 10px;
+}
+
+.menu-create {
+    border: 1px solid steelblue;
+    border-radius: 10px;
+    padding: 30px;
+    width: 50%;
+}
+
+/* -- Search -- */
+.header-table {
+   font-weight: bold;
+}
+
+/* -- Forms -- */
+.form_constumer {
+    text-align: left;
+    margin: auto;
+    width: 75%;
+}
+
+.form_constumer ul{
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+}
+
+.form_constumer li{
+    padding: 3px;
+    position: relative;
+}
+
+.form_constumer label{
+    float: left;
+    padding: 1px;
+    margin: 5px;
+    margin-top: 3px;
+    width: 150px;
+}
+
+.form_constumer input{
+    padding: 2px;
+    width: 400px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    text-align: left;
+}
+
+.form_constumer textarea{
+    padding: 2px;
+    width: 400px;
+    height: 75px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+}
+
+.form_constumer_submit {
+    float: center !important;
+    text-align: center !important;
+    position: static;
+    width: auto;
+}
+
+.input_size{
+    width: 80%;
+}
