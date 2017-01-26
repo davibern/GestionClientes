@@ -9,7 +9,7 @@
         private $pass='';
         private $charset='SET NAMES utf8';
 
-        public function Conexion(){
+        public function __construct(){
 
             try{
 
@@ -39,5 +39,5 @@
             $this->conexion_db->set_charset(DB_CHARSET_Q);
         */
     }
-    
+
 ?>

@@ -4,12 +4,12 @@
    if(!class_exists('Conexion')) {
 
       include("includes/conexion.php");
-      
+
    }
 
     class DevuelveClientes extends Conexion{
 
-        public function DevuelveClientes(){
+        public function __construct(){
 
             parent::__construct();
 

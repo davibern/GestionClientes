@@ -18,13 +18,18 @@
    <body>
         <div class="container">
             <header class="header">
-                <h1>Gestión Clientes <small><?php echo $empresa;?></small></h1>
+                <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $empresa;?></a></small></h1>
             </header>
         </div>
         <div class="container menu-index">
-            <div class="col-xs-6 col-sm-4 menu-option"><a href="buscarcliente.php">Consulta/Modificar</a></div>
-            <div class="col-xs-6 col-sm-4 menu-option"><a href="datosclientes.php">Crear</a></div>
-            <div class="col-xs-6 col-sm-4 menu-option"><a href="acceder.php">Acceder</a></div>
+            <div class="col-xs-6 col-sm-3 menu-option"><a href="buscarcliente.php">Consulta/Modificar</a></div>
+            <div class="col-xs-6 col-sm-3 menu-option"><a href="datosclientes.php">Crear</a></div>
+            <div class="col-xs-6 col-sm-3 menu-option"><a href="acceder.php">Acceder</a></div>
+            <div class="col-xs-6 col-sm-3 menu-option"><a href="acercade.php">Acerca de...</a></div>
+        </div>
+        <div class="container menu-index">
+            <br>
+            <img src="media/fondo-index.png" class="img-rounded">
         </div>
    </body>
 </html>

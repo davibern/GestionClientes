@@ -40,17 +40,20 @@
 
        // Usamos el método para rescatar nombre de empresa y lo guardamos en otra variable para poder usarla más tarde
        $empresa = $nombreempresa->getNameBussines();
-       
+
      ?>
     </head>
 
     <body>
          <div class="container">
              <header class="header">
-                  <h1>Gestión Clientes <small><?php echo $empresa;?></small></h1>
+                  <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $empresa;?></a></small></h1>
              </header>
          </div>
          <div class="container menu-create">
+            <div class="container">
+               <a href="index.php">Home</a> > <a href="buscarcliente.php">Buscar</a> > <a href="javascript:history.back()">Ver cliente</a><br><br>
+            </div>
            <form action="actualizarcliente.php" method="POST">
               <div class="form-horizontal">
                    <div class="form-group">

@@ -2,7 +2,7 @@
 <html lang="es">
    <head>
     <?php
-        
+
         // Ficheros de configuración y nombre de empresa
         include("includes/header.php");
         include("includes/empresa.php");
@@ -18,7 +18,7 @@
    <body>
         <div class="container">
             <header class="header">
-                <h1>Gestión Clientes <small><?php echo $empresa;?></small></h1>
+                <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $empresa;?></a></small></h1>
             </header>
         </div>
         <div class="container menu-index menu-search">

@@ -40,6 +40,37 @@
     width: 50%;
 }
 
+.menu-version {
+    text-align: left;
+}
+
+a.non-format {
+    color: grey;
+    text-shadow: 2px 2px 2px black;
+}
+
+a.non-format:link {
+   text-decoration: none;
+}
+
+a.non-format:hover {
+   text-decoration: none;
+}
+
+a.non-format:active {
+    text-decoration: none;
+}
+
+a.non-format:visited {
+    text-decoration: none;
+}
+
+/*-- img responsive --*/
+img {
+    height: auto;
+    max-width: 100%;
+}
+
 /* -- Search -- */
 .header-table {
    font-weight: bold;

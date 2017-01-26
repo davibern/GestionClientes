@@ -8,7 +8,7 @@
     define('PATH_JS_JQUERY', './scripts/jquery-3.1.1.js');
 
     // Título cabecera páguina
-    echo "<title>Gestión Peluquería Elena Baglietto</title>";
+    echo "<title>Gestión Clientes Peluquería</title>";
 
     // Responsive y otras opciones
     echo "<meta charset='utf-8'>";

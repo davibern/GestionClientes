@@ -26,10 +26,13 @@
     <body>
          <div class="container">
              <header class="header">
-                  <h1>Gestión Clientes <small><?php echo $empresa;?></small></h1>
+                  <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $empresa;?></a></small></h1>
              </header>
         </div>
         <div class="container menu-search">
+           <div class="container">
+             <a href="index.php">Home</a> > <a href="buscarcliente.php">Buscar</a>
+           </div>
            <table class="table table-striped">
              <tr class="header-table">
                 <td>Alias</td>
@@ -56,7 +59,7 @@
                           "</td>";
                       echo "<td>";
                             echo $elemento['tratamientocorporal'] .
-                          "</td>"; 
+                          "</td>";
                       echo "<td>";
                       echo "<a href='editar.php?id= " .  $elemento['idclientes'] . "'>Editar</a>
                            </td>";

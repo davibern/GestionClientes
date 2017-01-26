@@ -1,6 +1,6 @@
 <?php
 
-    // Incluimos la clase conexión sólo cuando no haya sido incuida
+    // Incluimos la clase conexión sólo cuando no haya sido incluida
     if(!class_exists('Conexion')) {
 
         include("includes/conexion.php");
