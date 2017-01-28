@@ -22,7 +22,7 @@
             // Sentencia SQl
             $sql = 'SELECT * FROM clientes WHERE idclientes = "' . $id . '"';
 
-            // Guardamos la varaible SQL usando la conexion de $conexion_db de la clase Conexion con el método prepare PDO
+            // Guardamos la variable SQL usando la conexion de $conexion_db de la clase Conexion con el método prepare PDO
             $query = $this->conexion_db->prepare($sql);
 
             // Guardamos el registro en un array
