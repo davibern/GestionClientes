@@ -61,7 +61,7 @@
                             echo $elemento['tratamientocorporal'] .
                           "</td>";
                       echo "<td>";
-                      echo "<a href='editar.php?id= " .  $elemento['idclientes'] . "'>Editar</a>
+                      echo "<a href='editar.php?id=" .  $elemento['idclientes'] . "'>Editar</a>
                            </td>";
                    echo "</tr>";
                  }
