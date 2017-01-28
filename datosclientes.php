@@ -16,6 +16,19 @@
      ?>
    </head>
    <body>
+         <?php
+
+            // Comprobamos la sesión de usuario
+            session_start();
+
+            // Si no está logado lo movemos a acceder para que ingrese
+            if(!isset($_SESSION['usuario'])) {
+
+                // Si no es usuario lo movemos a acceder
+                header('location:acceder.php');
+
+            }
+         ?>
         <div class="container">
             <header class="header">
                 <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $empresa;?></a></small></h1>
@@ -89,7 +102,7 @@
                             <button type="submit" name="enviar" value="Crear" class="btn btn-default">Crear</button>
                         </div>
                     </div>
-                </div>             
+                </div>
             </form>
         </div>
    </body>

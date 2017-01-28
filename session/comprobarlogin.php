@@ -54,16 +54,15 @@
                         session_start();
 
                         // Guardamos en la variable supergoblal el nombre de usuario
-                        //$_SESSION['usuario'] = $_GET['user'];
+                        $_SESSION['usuario'] = $_POST['user'];
 
                         // Dirigimos al usuario a una página temporal para comprobar que funciona
-                        echo "Bienvenido";
+                        header('location:../index.php');
 
                     } else {
 
                         // Dirigimos al usuario de nuevo a la página de login
-                        echo "Usuario incorrecto";
-
+                        header('location:../acceder.php');
                     }
 
             } catch (Exception $e) {
