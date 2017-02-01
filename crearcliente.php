@@ -41,13 +41,27 @@
     ?>
    </head>
    <body>
-        <div class="container">
-            <header class="header">
-                <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $empresa;?></a></small></h1>
-            </header>
-        </div>
-        <div class="container menu-index menu-search">
-            <p><?php echo $mensaje; ?></p>
-        </div>
+      <?php
+
+      // Recuperamos sesión si la hubiera
+      session_start();
+
+      // Comprobar si está con la sesión iniciada, si no lo está redirigimos a acceder.php
+      // Si lo está lo dejamos en la página actual
+      if(!isset($_SESSION['usuario'])) {
+
+         header('location:acceder.php');
+
+      }
+
+      ?>
+      <div class="container">
+         <header class="header">
+            <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $empresa;?></a></small></h1>
+         </header>
+      </div>
+      <div class="container menu-index menu-search">
+         <p><?php echo $mensaje; ?></p>
+      </div>
    </body>
 </html>

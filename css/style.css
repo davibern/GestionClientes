@@ -129,3 +129,17 @@ img {
 .input_size{
     width: 80%;
 }
+
+/* -- Acceso/Login -- */
+
+.login {
+    background: #D8D8D8;
+    width: 25em;
+    margin: 0 auto 0 auto;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.btn-acceder {
+    margin-top: 15px;
+}

@@ -2,10 +2,16 @@
 <h1>Programa para gestionar clientes de Peluquería</h1>
 
 <h2>Control de Versiones</h2>
-
-<h3>Versión 1.1.2016b</h3>
-
 <br>
+<h3>Versión 1.2.2016b</h3>
+<br>
+<ol>
+    <li>Aplicar capa de estilos a la página de login usando bootstrap</li>
+    <li>Capa de seguridad a la aplicación. Es necesario ingresar con usuario y contraseña para acceder a cualquier parte de la web</li>
+    <li>Cambiar en el index el acceso al login por otro de salir (cerrar sesión)</li>
+    <li>La pantalla de index.php si no está con sesión abierta redigirá al usuario a la web de login</li>
+</ol>
+<h3>Versión 1.1.2016b</h3>
 <ol>
     <li>Acceso al index en nombre peluquera por hipervínculo</li>
     <li>Clase css non format para hipervínculo de cabecera en nombre peluquera</li>

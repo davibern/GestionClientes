@@ -21,15 +21,27 @@
              <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $empresa;?></a></small></h1>
           </header>
       </div>
-      <div class="container menu-index menu-search">
-         <form action="session/login.php" method="post">
-               Usuario:<br>
-               <input type="text" name="user">
-               <br>
-               Contraseña:<br>
-               <input type="password" name="password"><br><br>
-               <input type="submit" name="enviar" value="Comprobar">
-         </form>
+      <div class="container menu-index">
+        <!-- Formulario Acceso -->
+        <form action="session/login.php" method="post">
+          <div class="row login">
+              <!-- usuario -->
+              <div class="form-horizontal" role="form">
+                <span class="glyphicon glyphicon-user col-lg-2 control-label"></span>
+                <div class="col-lg-10">
+                    <input type="text" name="user" class="form-control">
+                </div>
+              </div>
+              <!-- Contraseña -->
+              <div class="form-horizontal" role="form">
+                <span class="glyphicon glyphicon-lock col-lg-2 control-label"></span>
+                <div class="col-lg-10">
+                    <input type="password" name="password" class="form-control">
+                </div>
+              </div>
+              <input type="submit" class="btn btn-info btn-acceder" name="enviar" value="Acceder">
+          </div>
+        </form>
       </div>
    </body>
 </html>
