@@ -7,6 +7,9 @@
         include("includes/header.php");
         include("includes/empresa.php");
 
+        // Incluir comprobación de sesión
+        include("session/comprobarsesion.php");
+
         // Instanciamos un objeto nuevo de empresa para rescatar el nombre de la peluquería
         $nombreempresa = new Empresa();
 
@@ -18,16 +21,9 @@
    <body>
          <?php
 
-            // Comprobamos la sesión de usuario
-            session_start();
+            // Comprobar sesion
+            ComprobarSesion();
 
-            // Si no está logado lo movemos a acceder para que ingrese
-            if(!isset($_SESSION['usuario'])) {
-
-                // Si no es usuario lo movemos a acceder
-                header('location:acceder.php');
-
-            }
          ?>
         <div class="container">
             <header class="header">

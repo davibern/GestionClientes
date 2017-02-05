@@ -67,72 +67,67 @@
                 <div class="form-group">
                      <label class="col-lg-2 control-label">ID Cliente</label>
                      <div class="col-lg-10">
-                        <input type="text" name="idcliente" id="idcliente" class="form-control input_size" value="<?php echo $id;?>" required>
+                        <input type="text" name="idcliente" id="idcliente" class="form-control input_size" value="<?php echo $id;?>" readonly>
                      </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Nombre</label>
                     <div class="col-lg-10">
-                        <input type="text" name="nombre" id="nombre" class="form-control input_size" value="<?php echo $nombre;?>" required>
+                        <input type="text" name="nombre" id="nombre" class="form-control input_size" value="<?php echo $nombre;?>" readonly>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Alias</label>
                     <div class="col-lg-10">
-                        <input type="text" name="alias" id="alias" class="form-control input_size" value="<?php echo $alias;?>" required>
+                        <input type="text" name="alias" id="alias" class="form-control input_size" value="<?php echo $alias;?>" readonly>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Móvil</label>
                     <div class="col-lg-10">
-                        <input type="text" name="movil" id="movil" class="form-control input_size" value="<?php echo $movil;?>" required>
+                        <input type="text" name="movil" id="movil" class="form-control input_size" value="<?php echo $movil;?>" readonly>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Dirección</label>
                     <div class="col-lg-10">
-                        <input type="text" name="direccion" id="direccion" class="form-control input_size" value="<?php echo $direccion;?>" required>
+                        <input type="text" name="direccion" id="direccion" class="form-control input_size" value="<?php echo $direccion;?>" readonly>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Población</label>
                     <div class="col-lg-10">
-                        <input type="text" name="poblacion" id="poblacion" class="form-control input_size" value="<?php echo $poblacion;?>" required>
+                        <input type="text" name="poblacion" id="poblacion" class="form-control input_size" value="<?php echo $poblacion;?>" readonly>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Provincia</label>
                     <div class="col-lg-10">
-                        <input type="text" name="provincia" id="provincia" class="form-control input_size" value="<?php echo $provincia;?>" required>
+                        <input type="text" name="provincia" id="provincia" class="form-control input_size" value="<?php echo $provincia;?>" readonly>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Código Postal</label>
                     <div class="col-lg-10">
-                        <input type="text" name="codigopostal" id="codigopostal" class="form-control input_size" value="<?php echo $codigopostal;?>" required>
+                        <input type="text" name="codigopostal" id="codigopostal" class="form-control input_size" value="<?php echo $codigopostal;?>" readonly>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Tratamiento Capilar</label>
                     <div class="col-lg-10">
-                        <input type="text" name="tratamientocapilar" id="tratamientocapilar" class="form-control input_size" value="<?php echo $tratamientocapilar;?>" required>
+                        <input type="text" name="tratamientocapilar" id="tratamientocapilar" class="form-control input_size" value="<?php echo $tratamientocapilar;?>" readonly>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Tratamiento Corporal</label>
                     <div class="col-lg-10">
-                        <input type="text" name="tratamientocorporal" id="tratamientocorporal" class="form-control input_size" value="<?php echo $tratamientocorporal;?>" required>
+                        <input type="text" name="tratamientocorporal" id="tratamientocorporal" class="form-control input_size" value="<?php echo $tratamientocorporal;?>" readonly>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Observaciones</label>
                     <div class="col-lg-10">
-                        <input type="text" name="observaciones" id="observaciones" class="form-control input_size" value="<?php echo $observaciones;?>" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-lg-offset-2 col-lg-10">
-                        <button type="submit" name="enviar" value="Salvar" class="btn btn-default">Salvar</button>
+                        <input type="text" name="observaciones" id="observaciones" class="form-control input_size" value="<?php echo $observaciones;?>" readonly>
                     </div>
                 </div>
            </div>

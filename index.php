@@ -6,6 +6,8 @@
         // Ficheros de configuración y nombre de empresa
         include("includes/header.php");
         include("includes/empresa.php");
+        // Incluir comprobación de sesión
+        include("session/comprobarsesion.php");
 
         // Instanciamos un objeto nuevo de empresa para rescatar el nombre de la peluquería
         $nombreempresa = new Empresa();
@@ -18,16 +20,8 @@
    <body>
       <?php
 
-         // Recuperamos sesión si la hubiera
-         session_start();
-
-         // Comprobar si está con la sesión iniciada, si no lo está redirigimos a acceder.php
-         // Si lo está lo dejamos en la página actual
-         if(!isset($_SESSION['usuario'])) {
-
-            header('location:acceder.php');
-
-         }
+        // Comprobar sesion
+        ComprobarSesion();
 
       ?>
       <div class="container">
@@ -36,10 +30,10 @@
          </header>
       </div>
       <div class="container menu-index">
-         <div class="col-xs-6 col-sm-3 menu-option"><a href="buscarcliente.php">Consulta/Modificar</a></div>
-         <div class="col-xs-6 col-sm-3 menu-option"><a href="datosclientes.php">Crear</a></div>
-         <div class="col-xs-6 col-sm-3 menu-option"><a href="cerrar.php">Cerrar Sesión</a></div>
-         <div class="col-xs-6 col-sm-3 menu-option"><a href="acercade.php">Acerca de...</a></div>
+         <div class="col-xs-6 col-sm-3"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="parent.location.href('buscarcliente.php');">Consultar/Editar</button></div>
+         <div class="col-xs-6 col-sm-3"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="parent.location.href('datosclientes.php');">Crear</button></div>
+         <div class="col-xs-6 col-sm-3"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="parent.location.href('cerrar.php');">Cerrar Sesión</button></div>
+         <div class="col-xs-6 col-sm-3"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="parent.location.href('acercade.php');">Acerca de...</button></div>
       </div>
       <div class="container menu-index">
          <br>

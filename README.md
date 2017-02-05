@@ -3,6 +3,16 @@
 
 <h2>Control de Versiones</h2>
 <br>
+<h3>Versión 1.3.2016b</h3>
+<br>
+<ol>
+    <li>Aplicar botones de estilos en el index para facilitar la navegación. Los botones son responsive</li>
+    <li>Generada función ComprobarSesion() que se aplica a cada página. Ahorrar código en la comprobación de sesión</li>
+    <li>En la vista de consulta rápida añadir acceso de sólo lectura del cliente, sin opción a modificar</li>
+    <li>Acceso de sólo lectura del cliente, sin opción de modificar</li>
+    <li>Cambiar acceso de editar o ver cliente mediante botones boostrap</li>
+    <li>Añadido dos campos nuevos a la base de datos para comprobar fecha de creación y edición. Sin implantar</li>
+</ol>
 <h3>Versión 1.2.2016b</h3>
 <br>
 <ol>

@@ -7,6 +7,9 @@
             include("includes/header.php");
             include("includes/empresa.php");
 
+            // Incluir comprobación de sesión
+            include("session/comprobarsesion.php");
+
             // Instanciamos un objeto nuevo de empresa para rescatar el nombre de la peluquería
             $nombreempresa = new Empresa();
 
@@ -29,14 +32,14 @@
               <div class="form-horizontal" role="form">
                 <span class="glyphicon glyphicon-user col-lg-2 control-label"></span>
                 <div class="col-lg-10">
-                    <input type="text" name="user" class="form-control">
+                    <input type="text" name="user" class="form-control" required>
                 </div>
               </div>
               <!-- Contraseña -->
               <div class="form-horizontal" role="form">
                 <span class="glyphicon glyphicon-lock col-lg-2 control-label"></span>
                 <div class="col-lg-10">
-                    <input type="password" name="password" class="form-control">
+                    <input type="password" name="password" class="form-control" required>
                 </div>
               </div>
               <input type="submit" class="btn btn-info btn-acceder" name="enviar" value="Acceder">

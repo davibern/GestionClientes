@@ -7,6 +7,9 @@
         include("includes/header.php");
         include("includes/empresa.php");
 
+        // Incluir comprobación de sesión
+        include("session/comprobarsesion.php");
+
         // Instanciamos un objeto nuevo de empresa para rescatar el nombre de la peluquería
         $nombreempresa = new Empresa();
 
@@ -18,16 +21,8 @@
    <body>
       <?php
 
-      // Recuperamos sesión si la hubiera
-      session_start();
-
-      // Comprobar si está con la sesión iniciada, si no lo está redirigimos a acceder.php
-      // Si lo está lo dejamos en la página actual
-      if(!isset($_SESSION['usuario'])) {
-
-         header('location:acceder.php');
-
-      }
+        // Comprobar sesion
+        ComprobarSesion();
 
       ?>
       <div class="container">
@@ -39,6 +34,16 @@
          <div class="menu-version menu-option">
              <h1>Control de Versiones</h1>
              <br>
+              <h2>Versión 1.3.2016b</h2>
+             <br>
+             <ol>
+                 <li>Aplicar botones de estilos en el index para facilitar la navegación. Los botones son responsive</li>
+                 <li>Generada función ComprobarSesion() que se aplica a cada página. Ahorrar código en la comprobación de sesión</li>
+                 <li>En la vista de consulta rápida añadir acceso de sólo lectura del cliente, sin opción a modificar</li>
+                 <li>Acceso de sólo lectura del cliente, sin opción de modificar</li>
+                 <li>Cambiar acceso de editar o ver cliente mediante botones boostrap</li>
+                 <li>Añadido dos campos nuevos a la base de datos para comprobar fecha de creación y edición. Sin implantar</li>
+             </ol>
              <h2>Versión 1.2.2016b</h2>
              <br>
              <ol>

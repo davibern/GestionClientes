@@ -14,6 +14,9 @@
        include("includes/header.php");
        include("includes/empresa.php");
 
+       // Incluir comprobación de sesión
+       include("session/comprobarsesion.php");
+
        // Instanciamos un objeto nuevo de empresa para rescatar el nombre de la peluquería
        $nombreempresa = new Empresa();
 
@@ -26,16 +29,8 @@
     <body>
       <?php
 
-      // Recuperamos sesión si la hubiera
-      session_start();
-
-      // Comprobar si está con la sesión iniciada, si no lo está redirigimos a acceder.php
-      // Si lo está lo dejamos en la página actual
-      if(!isset($_SESSION['usuario'])) {
-
-       header('location:acceder.php');
-
-      }
+        // Comprobar sesion
+        ComprobarSesion();
 
       ?>
       <div class="container">
@@ -54,6 +49,7 @@
           <td>Móvil</td>
           <td>Capilar</td>
           <td>Corporal</td>
+          <td>Ver</td>
           <td>Editar</td>
        </tr>
        <?php
@@ -75,7 +71,10 @@
                       echo $elemento['tratamientocorporal'] .
                     "</td>";
                 echo "<td>";
-                echo "<a href='editar.php?id=" .  $elemento['idclientes'] . "'>Editar</a>
+                echo "<a href='vercliente.php?id=" .  $elemento['idclientes'] . "'><span class='glyphicon glyphicon-search'></span></a>
+                     </td>";
+                echo "<td>";
+                echo "<a href='editar.php?id=" .  $elemento['idclientes'] . "'><span class='glyphicon glyphicon-edit'></span></a>
                      </td>";
              echo "</tr>";
            }
