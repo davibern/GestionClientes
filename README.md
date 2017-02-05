@@ -4,7 +4,6 @@
 <h2>Control de Versiones</h2>
 <br>
 <h3>Versión 1.3.2016b</h3>
-<br>
 <ol>
     <li>Aplicar botones de estilos en el index para facilitar la navegación. Los botones son responsive</li>
     <li>Generada función ComprobarSesion() que se aplica a cada página. Ahorrar código en la comprobación de sesión</li>
@@ -14,7 +13,6 @@
     <li>Añadido dos campos nuevos a la base de datos para comprobar fecha de creación y edición. Sin implantar</li>
 </ol>
 <h3>Versión 1.2.2016b</h3>
-<br>
 <ol>
     <li>Aplicar capa de estilos a la página de login usando bootstrap</li>
     <li>Capa de seguridad a la aplicación. Es necesario ingresar con usuario y contraseña para acceder a cualquier parte de la web</li>
@@ -32,7 +30,6 @@
     <li>Acceso a pantalla de acerca de..., que contenga información según versiones</li>
 </ol>
 <h3>Versión 1.0.2016b</h3>
-<br>
 <ol>
     <li>Acceso a consulta de clientes por su alias</li>
     <li>Acceso a editar desde la consulta el cliente seleccionado</li>
