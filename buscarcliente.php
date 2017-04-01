@@ -32,7 +32,8 @@
       </div>
       <div class="container menu-index menu-search">
          <form action="consultaclientes.php" method="get">
-             <label>Alias Cliente: <input type="text" name="alias"></label>
+             <label>Alias: <input type="text" name="alias"></label><br>
+             <label>Móvil: <input type="text" name="movil"></label><br>
              <input type="submit" name="buscar" value="Buscar">
          </form>
       </div>

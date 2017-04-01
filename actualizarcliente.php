@@ -15,7 +15,7 @@
       $mensaje = "No se ha podido modificar el cliente. Consulta con el administrador.";
 
    } else {
-
+     
       $mensaje = "El cliente ha sido modificado correctamente. <br><br>
                   <a href='buscarcliente.php'>Buscar otro cliente</a> <br><br>
                   <a href='index.php'>Volver al menú principal</a>";

@@ -3,6 +3,15 @@
 
 <h2>Control de Versiones</h2>
 <br>
+<h3>Versión 1.4.2016b</h3>
+<ol>
+    <li>Página de error 404 personalizada si se accede a una url que no existe</li>
+    <li>Incluir opción de poder buscar cliente por teléfono</li>
+    <li>Posibilidad de buscar por alias, teléfono o ambas a la vez</li>
+    <li>Añadir a la tabla clientes los campos: creadopor, modificadopor, fechacreacion y fechamodificacion</li>
+    <li>Añadir a la página de crear cliente los campos de sólo lectura del usuario conectado y la fecha. Este dato actualiza la base de datos.</li>
+    <li>Añadir a la página de editar cliente los campos de sólo lectura del usuario conectado y la fecha. Este dato actualiza la base de datos.</li>
+</ol>
 <h3>Versión 1.3.2016b</h3>
 <ol>
     <li>Aplicar botones de estilos en el index para facilitar la navegación. Los botones son responsive</li>

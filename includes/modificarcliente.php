@@ -40,7 +40,9 @@
                             codigopostal = ?,
                             tratamientocapilar = ?,
                             tratamientocorporal = ?,
-                            observaciones = ?
+                            observaciones = ?,
+                            modificadopor = ?,
+                            fechamodificacion = ?
                         WHERE idclientes = ?";
            }
 
@@ -64,8 +66,10 @@
             $query->bindParam(8, $datos['tratamientocapilar'], PDO::PARAM_STR);
             $query->bindParam(9, $datos['tratamientocorporal'], PDO::PARAM_STR);
             $query->bindParam(10, $datos['observaciones'], PDO::PARAM_STR);
-            $query->bindParam(11, $datos['idcliente'], PDO::PARAM_INT);
-
+            $query->bindParam(11, $datos['usuario'], PDO::PARAM_STR);
+            $query->bindParam(12, $datos['fecha'], PDO::PARAM_STR);
+            $query->bindParam(13, $datos['idcliente'], PDO::PARAM_STR);
+            
             // Ejecutamos la consulta
             $query->execute();
 

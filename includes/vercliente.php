@@ -15,9 +15,9 @@
 
         }
 
-        public function getClientes($alias){
+        public function getClientesAlias($alias){
 
-            $sql = 'SELECT * FROM clientes WHERE alias = "'. $alias . '"';
+            $sql = 'SELECT * FROM clientes WHERE alias = "' . $alias . '"';
 
             $sentencia = $this->conexion_db->prepare($sql);
 
@@ -39,6 +39,41 @@
 
             return $clientes;*/
 
+        }
+
+        public function getClientesPhone($number){
+
+            $sql = 'SELECT * FROM clientes WHERE movil = "' . $number . '"';
+
+            $sentencia = $this->conexion_db->prepare($sql);
+
+            $sentencia->execute(array());
+
+            $resultado = $sentencia->fetchAll(PDO::FETCH_ASSOC);
+
+            $sentencia->closeCursor();
+
+            return $resultado;
+
+            $this->conexion_db = null;
+
+        }
+
+        public function getClientesAliasPhone($alias, $number){
+
+            $sql = 'SELECT * FROM clientes WHERE alias = "' . $alias . '" AND movil = "' . $number . '"';
+
+            $sentencia = $this->conexion_db->prepare($sql);
+
+            $sentencia->execute(array());
+
+            $resultado = $sentencia->fetchAll(PDO::FETCH_ASSOC);
+
+            $sentencia->closeCursor();
+
+            return $resultado;
+
+            $this->conexion_db = null;
         }
 
     }

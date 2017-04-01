@@ -94,6 +94,18 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label class="col-lg-2 control-label">Usuario</label>
+                        <div class="col-lg-10">
+                            <input type="text" name="usuario" id="usuario" class="form-control input_size" value="<?php echo $_SESSION['usuario'];?>" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">Fecha Actualización</label>
+                        <div class="col-lg-10">
+                            <input type="text" name="fecha" id="fecha" class="form-control input_size" value="<?php echo date("Y-m-d", strtotime("now"));?>" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <div class="col-lg-offset-2 col-lg-10">
                             <button type="submit" name="enviar" value="Crear" class="btn btn-default">Crear</button>
                         </div>
