@@ -25,19 +25,6 @@
 
         }
 
-        // Este método es con la clase mysqli, para usarla descomentar y comentar la librería PDO
-
-        /*$this->conexion_db = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-
-            if($this->conexion_db->connect_errno){
-
-                echo "Fallo al conectar con la base de datos: " . $this->conexion_db->connect_error;
-
-                return;
-            }
-
-            $this->conexion_db->set_charset(DB_CHARSET_Q);
-        */
     }
 
 ?>
