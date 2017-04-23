@@ -30,10 +30,10 @@
          </header>
       </div>
       <div class="container menu-index">
-         <div class="col-xs-6 col-sm-3"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="parent.location.href('buscarcliente.php');">Consultar/Editar</button></div>
-         <div class="col-xs-6 col-sm-3"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="parent.location.href('datosclientes.php');">Crear</button></div>
-         <div class="col-xs-6 col-sm-3"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="parent.location.href('cerrar.php');">Cerrar Sesión</button></div>
-         <div class="col-xs-6 col-sm-3"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="parent.location.href('acercade.php');">Acerca de...</button></div>
+         <div class="col-xs-6 col-sm-3"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='buscarcliente.php'">Consultar/Editar</button></div>
+         <div class="col-xs-6 col-sm-3"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='datosclientes.php'">Crear</button></div>
+         <div class="col-xs-6 col-sm-3"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='cerrar.php'">Cerrar Sesión</button></div>
+         <div class="col-xs-6 col-sm-3"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='acercade.php'">Acerca de...</button></div>
       </div>
       <div class="container menu-index">
          <br>

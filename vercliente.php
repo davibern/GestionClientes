@@ -27,6 +27,8 @@
       $tratamientocapilar = $elemento['tratamientocapilar'];
       $tratamientocorporal = $elemento['tratamientocorporal'];
       $observaciones = $elemento['observaciones'];
+      $modificadopor = $elemento['modificadopor'];
+      $fechamodificacion = $elemento['fechamodificacion'];
    }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -128,6 +130,18 @@
                     <label class="col-lg-2 control-label">Observaciones</label>
                     <div class="col-lg-10">
                         <input type="text" name="observaciones" id="observaciones" class="form-control input_size" value="<?php echo $observaciones;?>" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">Modificado por</label>
+                    <div class="col-lg-10">
+                        <input type="text" name="tratamientocapilar" id="tratamientocapilar" class="form-control input_size" value="<?php echo $modificadopor;?>" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">Fecha modificación</label>
+                    <div class="col-lg-10">
+                        <input type="text" name="tratamientocorporal" id="tratamientocorporal" class="form-control input_size" value="<?php echo $fechamodificacion;?>" readonly>
                     </div>
                 </div>
            </div>

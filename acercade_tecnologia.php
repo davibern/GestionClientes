@@ -6,6 +6,7 @@
         // Ficheros de configuración y nombre de empresa
         include("includes/header.php");
         include("includes/empresa.php");
+
         // Incluir comprobación de sesión
         include("session/comprobarsesion.php");
 
@@ -30,28 +31,16 @@
          </header>
       </div>
       <div class="container menu-index">
-        <div class="col-sm-6">
-         <!-- Card control de versiones -->
-         <div class="card card-general card-right">
-            <div class"card-block">
-              <h3 class="card-title">Control de Versiones</h3>
-              <p class="card-text">Accede para ver la evolución de la aplicación y las características que se han ido añadiendo.</p>
-              <a href="acercade_controlversiones.php" class="btn btn-primary">Acceder</a>
-              <p></p>
-            </div>
+         <div class="menu-version menu-option">
+             <h1>Tecnología Usada</h1>
+             <br>
+             <ol>
+                <li>Lenguaje: <a href="http://php.net/" target="_blank">PHP</a></li>
+                <li>Servidor: <a href="http://apache.org/" target="_blank">Apache</a></li>
+                <li>Base Datos: <a href="https://www.mysql.com/" target="_blank">MySQL</a></li>
+                <li>Framework CSS: <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+             </ol>
          </div>
-        </div>
-        <div class="col-sm-6">
-         <!-- Card Tecnología usada -->
-         <div class="card card-general card-left">
-            <div class"card-block">
-              <h3 class="card-title">Tecnología</h3>
-              <p class="card-text">Accede para ver que frameworks se están usando en la aplicación web.</p>
-              <a href="acercade_tecnologia.php" class="btn btn-primary">Acceder</a>
-              <p></p>
-            </div>
-         </div>
-        </div>
       </div>
    </body>
 </html>

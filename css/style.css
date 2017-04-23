@@ -143,3 +143,19 @@ img {
 .btn-acceder {
     margin-top: 15px;
 }
+
+/* -- Acceso/Login -- */
+
+.card-general {
+    width: 30rem;
+    border-radius: 15px;
+    border: 1px solid steelblue;
+}
+
+.card-right {
+    float: right;
+}
+
+.card-left {
+    float: left;
+}

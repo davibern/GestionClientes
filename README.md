@@ -3,6 +3,15 @@
 
 <h2>Control de Versiones</h2>
 <br>
+    <h2>Versión 1.5.2016b</h2>
+    <br>
+    <ol>
+    <li>Rediseñar página acerdade.php. Presenta dos tarjetas con acceso al control de versiones y a la tecnología usada</li>
+    <li>Crear página acerdade que contenga la tecnología usada y sus referencias</li>
+    <li>Implantar un sistema de cookies muy básico en el login que afecte a todo el directorio de la aplicación</li>
+    <li>En vercliente.php incluir el usuario que modifica y la fecha como dato a consultar</li>
+    <li>Se corrige una incidencia con respecto a los enlaces javascript del index.php</li>
+    </ol>
 <h3>Versión 1.4.2016b</h3>
 <ol>
     <li>Página de error 404 personalizada si se accede a una url que no existe</li>

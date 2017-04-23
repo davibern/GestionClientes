@@ -47,7 +47,7 @@
                     // 1 - Devuelve una fila si encuentra al usuario
                     $numRegistros = $query->rowCount();
 
-                    // Comprobamos si devuelve algo el métod rowCount()
+                    // Comprobamos si devuelve algo el método rowCount()
                     if($numRegistros!=0) {
 
                         // Iniciamos sesión
@@ -55,6 +55,10 @@
 
                         // Guardamos en la variable supergoblal el nombre de usuario
                         $_SESSION['usuario'] = $_POST['user'];
+
+                        // Guardamos la cookie
+                        include('cookie.php');
+                        Cookie();
 
                         // Dirigimos al usuario a una página temporal para comprobar que funciona
                         header('location:../index.php');
