@@ -34,7 +34,7 @@
          <div class="menu-version menu-option">
              <h1>Control de Versiones</h1>
              <br>
-             <h2>Versión 1.6.2016b</h2>
+             <h2>Versión 1.6.2017b</h2>
              <br>
              <ol>
                 <li>Cargar en el header() el frameworkd jQuery</li>

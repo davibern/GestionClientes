@@ -3,7 +3,7 @@
 
 <h2>Control de Versiones</h2>
 <br>
-<h2>Versión 1.6.2016b</h2>
+<h2>Versión 1.6.2017b</h2>
 <ol>
     <li>Cargar en el header() el frameworkd jQuery</li>
     <li>Añadir como referencias jQuery y Stackoverflow en Tecnología</li>
