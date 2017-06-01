@@ -26,7 +26,7 @@
             try {
 
                     // Guardamos la sentencia sql para sacar obtener al usuario de la base de datos
-                    $sql = 'SELECT * FROM usuarios WHERE usuario = ? AND password = ?';
+                    $sql = 'SELECT * FROM usuarios WHERE usuario = ?';
 
                     // Preparamos la consulta con la sentencia guardada en $sql usando el atributo de la clase Conexion
                     $query = $this->conexion_db->prepare($sql);
@@ -37,19 +37,13 @@
 
                     // Ligamos los parámetros de la consulta usando bindParam con lo que haya escrito el usuario en el formulario de login
                     $query->bindParam(1, $user, PDO::PARAM_STR);
-                    $query->bindParam(2, $password, PDO::PARAM_STR);
 
                     // Ejecutamos la consulta
                     $query->execute();
-
-                    // Guardamos la ejecución de la consulta en una variable. A $query le aplicamos el método rowCount() que devuelve 0 ó 1 si existen filas
-                    // 0 - No devuelve ninguna fila la consulta
-                    // 1 - Devuelve una fila si encuentra al usuario
-                    $numRegistros = $query->rowCount();
-
-                    // Comprobamos si devuelve algo el método rowCount()
-                    if($numRegistros!=0) {
-
+                    $row = $query->fetch(PDO::FETCH_ASSOC);
+                    
+                    if(password_verify($password, $row['password'])){
+                        
                         // Iniciamos sesión
                         session_start();
 

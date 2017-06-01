@@ -3,15 +3,23 @@
 
 <h2>Control de Versiones</h2>
 <br>
-    <h2>Versión 1.5.2016b</h2>
-    <br>
-    <ol>
+<h2>Versión 1.6.2016b</h2>
+<ol>
+    <li>Cargar en el header() el frameworkd jQuery</li>
+    <li>Añadir como referencias jQuery y Stackoverflow en Tecnología</li>
+    <li>Crear un panel de control de Usuario para cambiar la contraseña</li>
+    <li>Crear clase Usuario que contenga un método para cambiar la contraseña</li>
+    <li>La contraseña que se almacene en el cambio debe estar encriptada con blowfish</li>
+    <li>Validar la comprobación del login con la contraseña encriptada</li>
+</ol>
+<h2>Versión 1.5.2016b</h2>
+<ol>
     <li>Rediseñar página acerdade.php. Presenta dos tarjetas con acceso al control de versiones y a la tecnología usada</li>
     <li>Crear página acerdade que contenga la tecnología usada y sus referencias</li>
     <li>Implantar un sistema de cookies muy básico en el login que afecte a todo el directorio de la aplicación</li>
     <li>En vercliente.php incluir el usuario que modifica y la fecha como dato a consultar</li>
     <li>Se corrige una incidencia con respecto a los enlaces javascript del index.php</li>
-    </ol>
+</ol>
 <h3>Versión 1.4.2016b</h3>
 <ol>
     <li>Página de error 404 personalizada si se accede a una url que no existe</li>

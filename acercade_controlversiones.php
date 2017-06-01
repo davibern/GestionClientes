@@ -34,6 +34,16 @@
          <div class="menu-version menu-option">
              <h1>Control de Versiones</h1>
              <br>
+             <h2>Versión 1.6.2016b</h2>
+             <br>
+             <ol>
+                <li>Cargar en el header() el frameworkd jQuery</li>
+                <li>Añadir como referencias jQuery y Stackoverflow en Tecnología</li>
+                <li>Crear un panel de control de Usuario para cambiar la contraseña</li>
+                <li>Crear clase Usuario que contenga un método para cambiar la contraseña</li>
+                <li>La contraseña que se almacene en el cambio debe estar encriptada con blowfish</li>
+                <li>Validar la comprobación del login con la contraseña encriptada</li>
+             </ol>
              <h2>Versión 1.5.2016b</h2>
              <br>
              <ol>

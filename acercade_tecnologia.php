@@ -39,6 +39,8 @@
                 <li>Servidor: <a href="http://apache.org/" target="_blank">Apache</a></li>
                 <li>Base Datos: <a href="https://www.mysql.com/" target="_blank">MySQL</a></li>
                 <li>Framework CSS: <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                <li>Framework Javascript: <a href="https://jquery.com/" target="_blank">jQuery</a></li>
+                <li>Soporte: <a href="https://es.stackoverflow.com/" target="_blank">StackOverflow ES</a></li>
              </ol>
          </div>
       </div>

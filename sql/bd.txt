@@ -1,0 +1,36 @@
+Estructura de la base de datos:
+
+Proveedor: MySQL
+Versión: 5.7.9
+
+- Tablas
+   * clientes
+   * info
+   * usuarios
+
+- Campos
+   * clientes
+      + idclientes INT(11) - PK, NN, UQ, AI
+      + nombre VARCHAR(25)
+      + alias VARCHAR(25)
+      + movil VARCHAR(10)
+      + direccion VARCHAR(100)
+      + poblacion VARCHAR(45)
+      + provincia VARCHAR(45)
+      + codigopostal VARCHAR(10)
+      + tratamientocapilar VARCHAR(100)
+      + tratamientocorporal VARCHAR(100)
+      + observaciones VARCHAR(200)
+      + fechacreacion DATETIME
+      + fechamodificacion DATETIME
+      + creadpor VARCHAR(45)
+      + modificadopor VARCHAR(45)
+   * info
+      + version VARCHAR(20) - PK, NN
+      + empresa VARCHAR(45)
+      + detalles_version VARCHAR(1000)
+   * usuarios
+      + idusuario INT(11) - PK, NN, UQ, AI
+      + usuario VARCHAR(45) - NN
+      + password VARCHAR(255) - NN
+      + nivel INT(11)

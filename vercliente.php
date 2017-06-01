@@ -1,20 +1,20 @@
 <?php
-   // Incluimos la clase EditarCliente
+   // Incluir la clase EditarCliente
    include("includes/editarcliente.php");
 
    // Incluir comprobación de sesión
    include("session/comprobarsesion.php");
 
-   // Instanciamos un objeto de la clase editar clientes
+   // Instanciar un objeto de la clase editar clientes
    $cliente = new EditarCliente;
 
-   // Traemos el valor del cliente a editar
+   // Traer el valor del cliente a editar
    $idcliente = $_GET['id'];
 
-   // Creamos un objeto nuevo que traiga el cliente a editar usando el método EditClient de EditarCliente
+   // Crear un objeto nuevo que traiga el cliente a editar usando el método EditClient de EditarCliente
    $editarcliente = $cliente->EditClient($idcliente);
 
-   // Recorremos todo el array y guardamos cada elmento del campo en su correspondiente variable
+   // Recorrer todo el array y guardamos cada elmento del campo en su correspondiente variable
    foreach ($editarcliente as $elemento) {
       $id = $elemento['idclientes'];
       $nombre = $elemento['nombre'];
