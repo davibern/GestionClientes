@@ -1,7 +1,7 @@
 <?php
 
    // Incluimos la clase Modificar cliente
-   include("includes/modificarcliente.php");
+   include __DIR__ . '/includes/modificarcliente.php';
 
    // Instanciamos un objeto de modificar cliente
    $modificarcliente = new ModificarCliente;
@@ -29,11 +29,11 @@
     <?php
 
       // Ficheros de configuración y nombre de empresa
-      include("includes/header.php");
-      include("includes/empresa.php");
+      include __DIR__ . '/includes/header.php';
+      include __DIR__ . '/includes/empresa.php';
 
       // Incluir comprobación de sesión
-      include("session/comprobarsesion.php");
+      include __DIR__ . '/session/comprobarsesion.php';
 
       // Instanciamos un objeto nuevo de empresa para rescatar el nombre de la peluquería
       $nombreempresa = new Empresa();
