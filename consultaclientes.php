@@ -1,7 +1,7 @@
 <?php
 
     // Incluimos la clase Devuelve Clientes
-    include __DIR__ . '/includes/vercliente.php';
+    include("includes/vercliente.php");
     
     // Creamos un nuevo objeto
     $clientes = new DevuelveClientes();
@@ -29,11 +29,11 @@
      <?php
 
         // Ficheros de configuración y nombre de empresa
-        include __DIR__ . '/includes/header.php';
-        include __DIR__ . '/includes/empresa.php';
+       include("includes/header.php");
+       include("includes/empresa.php");
 
-        // Incluir comprobación de sesión
-        include __DIR__ . '/session/comprobarsesion.php';
+       // Incluir comprobación de sesión
+       include("session/comprobarsesion.php");
 
        // Instanciamos un objeto nuevo de empresa para rescatar el nombre de la peluquería
        $nombreempresa = new Empresa();

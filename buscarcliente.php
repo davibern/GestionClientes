@@ -4,11 +4,11 @@
     <?php
 
         // Ficheros de configuración y nombre de empresa
-        include __DIR__ . '/includes/header.php';
-        include __DIR__ . '/includes/empresa.php';
+        include("includes/header.php");
+        include("includes/empresa.php");
 
         // Incluir comprobación de sesión
-        include __DIR__ . '/session/comprobarsesion.php';
+        include("session/comprobarsesion.php");
 
         // Instanciamos un objeto nuevo de empresa para rescatar el nombre de la peluquería
         $nombreempresa = new Empresa();

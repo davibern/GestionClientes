@@ -1,6 +1,9 @@
 <?php
    // Incluimos la clase EditarCliente
-   include __DIR__ . '/includes/editarcliente.php';
+   include("includes/editarcliente.php");
+
+   // Incluir comprobación de sesión
+   include("session/comprobarsesion.php");
 
    // Instanciamos un objeto de la clase editar clientes
    $cliente = new EditarCliente;
@@ -32,11 +35,8 @@
      <?php
 
         // Ficheros de configuración y nombre de empresa
-        include __DIR__ . '/includes/header.php';
-        include __DIR__ . '/includes/empresa.php';
-
-        // Incluir comprobación de sesión
-        include __DIR__ . '/session/comprobarsesion.php';
+       include("includes/header.php");
+       include("includes/empresa.php");
 
        // Instanciamos un objeto nuevo de empresa para rescatar el nombre de la peluquería
        $nombreempresa = new Empresa();
@@ -64,10 +64,10 @@
       </div>
          <form action="actualizarcliente.php" method="POST">
            <div class="form-horizontal">
-                <div class="form-group hidden">
+                <div class="form-group">
                      <label class="col-lg-2 control-label">ID Cliente</label>
                      <div class="col-lg-10">
-                        <input type="hidden" name="idcliente" id="idcliente" class="form-control input_size" value="<?php echo $id;?>" required>
+                        <input type="text" name="idcliente" id="idcliente" class="form-control input_size" value="<?php echo $id;?>" required>
                      </div>
                 </div>
                 <div class="form-group">

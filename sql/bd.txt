@@ -3,15 +3,6 @@ Estructura de la base de datos:
 Proveedor: MySQL
 Versión: 5.7.9
 
-** Acceso **
-
-+ Nombre: peluqueria
-+ usuario: root
-+ pass: (blanco)
-+ servidor: localhost
-
-** Estructura**
-
 - Tablas
    * clientes
    * info
