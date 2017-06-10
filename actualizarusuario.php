@@ -1,9 +1,9 @@
 <?php
     // Incluir la clase usuario
-    require('includes/usuario.php');
+    require __DIR__ . '/includes/usuario.php';
 
     // Incluir comprobación de sesión
-    include('session/comprobarsesion.php');
+    include __DIR__ . '/session/comprobarsesion.php';
 
     ComprobarSesion();
 

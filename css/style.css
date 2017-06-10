@@ -130,6 +130,10 @@ img {
     width: 80%;
 }
 
+.hidden {
+    display: none;
+}
+
 /* -- Acceso/Login -- */
 
 .login {
