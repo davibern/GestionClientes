@@ -1,3 +1,5 @@
+Apache License 2.0
+
 # GestionClientes
 <h1>Programa para gestionar clientes de Peluquería</h1>
 
