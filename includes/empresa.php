@@ -1,5 +1,14 @@
 <?php
 
+    /*
+        Autor: David Bernabé
+        E-mail: david.bern.pal@gmail.com
+        Función: proveer el estilo de la web
+        Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
+
+        Función: clase padre muestra los datos de la empresa dada de alta en la base de datos como logo de la página
+    */
+
    // Incluimos sólo la clase conexión si no existe
    if(!class_exists('Conexion')) {
 

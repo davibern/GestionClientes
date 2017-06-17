@@ -1,6 +1,17 @@
+<!--
+
+  Autor: David Bernabé
+  E-mail: david.bern.pal@gmail.com
+  Función: proveer el estilo de la web
+  Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
+
+  Función: Página general de la aplicación web
+
+-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html lang="es">
    <head>
+
       <?php
 
         // Ficheros de configuración y nombre de empresa
@@ -17,6 +28,7 @@
 
       ?>
    </head>
+
    <body>
       <?php
 
@@ -41,4 +53,5 @@
          <img src="media/fondo-index.png" class="img-rounded">
       </div>
    </body>
+   
 </html>

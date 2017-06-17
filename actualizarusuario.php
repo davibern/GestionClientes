@@ -1,4 +1,14 @@
 <?php
+
+    /*
+        Autor: David Bernabé
+        E-mail: david.bern.pal@gmail.com
+        Función: proveer el estilo de la web
+        Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
+
+        Función: función para actualizar el usuario que está logueado
+    */
+
     // Incluir la clase usuario
     require __DIR__ . '/includes/usuario.php';
 
@@ -17,4 +27,5 @@
 
     // Crear un nuevo objeto que llame al médoto setNewPass de la clase Usuario
     $cambiarpassword = $usuario->SetNewPass($passactual, $passnueva);
+    
 ?>

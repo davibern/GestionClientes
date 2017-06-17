@@ -3,6 +3,16 @@
 
 <h2>Control de Versiones</h2>
 <br>
+<h2>Versión 1.7.2017b</h2>
+<ol>
+    <li>En el formulario para editar se ocultan campos que no son necesarios mostrar</li>
+    <li>En el formulario para consultar se ocultan campos que no son necesarios mostrar</li>
+    <li>Añadir constante __DIR__ en los ficheros de configuración</li>
+    <li>Cambiar la consulta foreach en consultaclientes para optimizarla por un foreach:endforeach</li>
+    <li>Cambiar la clase de verclientes para generar un array de objetos en vez de un array asociativo</li>
+    <li>Añadir licencia de la aplicación web</li>
+    <li>Añadir referencias del autor en cada fichero de la aplicación</li>
+</ol>
 <h2>Versión 1.6.2017b</h2>
 <ol>
     <li>Cargar en el header() el frameworkd jQuery</li>

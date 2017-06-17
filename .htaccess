@@ -1,3 +1,7 @@
+#Autor: David Bernabé
+#E-mail: david.bern.pal@gmail.com
+#Licencia: Apache 2.0
+#
 #RewriteEngine
 <IfModule mod_rewrite.c>
     Options +FollowSymLinks

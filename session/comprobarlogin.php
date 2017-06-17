@@ -1,9 +1,18 @@
 <?php
 
+    /*
+        Autor: David Bernabé
+        E-mail: david.bern.pal@gmail.com
+        Función: proveer el estilo de la web
+        Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
+
+        Función: clase padre que busca al usuario y lo conecta con la aplicación
+    */
+
     // Incluimos la clase conexión sólo cuando no haya sido incluida
     if(!class_exists('Conexion')) {
 
-        include('../includes/conexion.php');
+        include dirname(__DIR__) . '/includes/conexion.php';
 
     }
 

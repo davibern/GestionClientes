@@ -1,5 +1,16 @@
+<!--
+
+  Autor: David Bernabé
+  E-mail: david.bern.pal@gmail.com
+  Función: proveer el estilo de la web
+  Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
+
+  Función: Página para el control de errores por .htacess
+
+-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html lang="es">
+
    <head>
       <!-- Título -->
       <title>Gestión Clientes Peluquería</title>
@@ -27,4 +38,5 @@
          <p><a href="/GestionClientes/index.php">Vuelve a la página principal</a></p>
       </div>
    </body>
+   
 </html>

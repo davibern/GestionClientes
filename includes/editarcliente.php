@@ -1,4 +1,14 @@
 <?php
+
+    /*
+        Autor: David Bernabé
+        E-mail: david.bern.pal@gmail.com
+        Función: proveer el estilo de la web
+        Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
+
+        Función: clase padre que edita los datos de los clientes
+    */
+
    // Incluimos la clase conexion
    include("includes/conexion.php");
 

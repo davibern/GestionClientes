@@ -1,5 +1,16 @@
+<!--
+
+  Autor: David Bernabé
+  E-mail: david.bern.pal@gmail.com
+  Función: proveer el estilo de la web
+  Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
+
+  Función: Página para leer el control de versiones
+
+-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html lang="es">
+
    <head>
       <?php
 
@@ -18,6 +29,7 @@
 
       ?>
    </head>
+
    <body>
       <?php
 
@@ -34,6 +46,17 @@
          <div class="menu-version menu-option">
              <h1>Control de Versiones</h1>
              <br>
+             <h2>Versión 1.7.2017b</h2>
+             <br>
+             <ol>
+                <li>En el formulario para editar se ocultan campos que no son necesarios mostrar</li>
+                <li>En el formulario para consultar se ocultan campos que no son necesarios mostrar</li>
+                <li>Añadir constante __DIR__ en los ficheros de configuración</li>
+                <li>Cambiar la consulta foreach en consultaclientes para optimizarla por un foreach:endforeach</li>
+                <li>Cambiar la clase de verclientes para generar un array de objetos en vez de un array asociativo</li>
+                <li>Añadir licencia de la aplicación web</li>
+                <li>Añadir referencias del autor en cada fichero de la aplicación</li>
+             </ol>
              <h2>Versión 1.6.2017b</h2>
              <br>
              <ol>
@@ -106,4 +129,5 @@
          </div>
       </div>
    </body>
+   
 </html>

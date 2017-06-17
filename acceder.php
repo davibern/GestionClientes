@@ -1,5 +1,16 @@
+<!--
+
+  Autor: David Bernabé
+  E-mail: david.bern.pal@gmail.com
+  Función: proveer el estilo de la web
+  Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
+
+  Función: Página para acceder al index principal de la aplicación
+
+-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html lang="es">
+
    <head>
      <?php
 
@@ -18,6 +29,7 @@
 
      ?>
    </head>
+
    <body>
       <div class="container">
           <header class="header">
@@ -47,4 +59,5 @@
         </form>
       </div>
    </body>
+   
 </html>
