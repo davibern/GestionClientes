@@ -3,6 +3,16 @@
 
 <h2>Control de Versiones</h2>
 <br>
+<h2>Versión 1.8.2017b</h2>
+<ol>
+    <li>Mostrar a todos los clientes si no se busca por ningún parámetro</li>
+    <li>Al mostrar todos los clientes mostrar filtro de abecedario para buscar por primera letra del alias</li>
+    <li>Creada nueva tabla en la base de datos llamada facturacion</li>
+    <li>Nueva página de datos económicos con dos accesos: uno para crear nuevo registro y otro para buscar registros por año</li>
+    <li>Creada interfaz para añadir registros económicos</li>
+    <li>Creada interfaz para mostrar registros económicos</li>
+    <li>Creada clase para añadir/ver registros económicos</li>
+</ol>
 <h2>Versión 1.7.2017b</h2>
 <ol>
     <li>En el formulario para editar se ocultan campos que no son necesarios mostrar</li>

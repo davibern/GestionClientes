@@ -5,6 +5,7 @@
     Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
 */
 
+
 /*
     Descomentar para qitar los bordes en pruebas
 
@@ -12,6 +13,7 @@
     border: 1px dashed #6a9afb;
 }
 */
+
 
 /* -- General -- */
 
@@ -57,11 +59,11 @@ a.non-format {
 }
 
 a.non-format:link {
-   text-decoration: none;
+    text-decoration: none;
 }
 
 a.non-format:hover {
-   text-decoration: none;
+    text-decoration: none;
 }
 
 a.non-format:active {
@@ -72,37 +74,47 @@ a.non-format:visited {
     text-decoration: none;
 }
 
+
 /*-- img responsive --*/
+
 img {
     height: auto;
     max-width: 100%;
 }
 
+
 /* -- Search -- */
+
 .header-table {
-   font-weight: bold;
+    font-weight: bold;
 }
 
+.capa-oculta {
+    display: none;
+}
+
+
 /* -- Forms -- */
+
 .form_constumer {
     text-align: left;
     margin: auto;
     width: 75%;
 }
 
-.form_constumer ul{
+.form_constumer ul {
     list-style-type: none;
     list-style-position: outside;
     margin: 0px;
     padding: 0px;
 }
 
-.form_constumer li{
+.form_constumer li {
     padding: 3px;
     position: relative;
 }
 
-.form_constumer label{
+.form_constumer label {
     float: left;
     padding: 1px;
     margin: 5px;
@@ -110,7 +122,7 @@ img {
     width: 150px;
 }
 
-.form_constumer input{
+.form_constumer input {
     padding: 2px;
     width: 400px;
     border-radius: 2px;
@@ -118,7 +130,7 @@ img {
     text-align: left;
 }
 
-.form_constumer textarea{
+.form_constumer textarea {
     padding: 2px;
     width: 400px;
     height: 75px;
@@ -133,15 +145,14 @@ img {
     width: auto;
 }
 
-.input_size{
+.input_size {
     width: 80%;
 }
 
 .hidden {
-
     display: none;
-    
 }
+
 
 /* -- Acceso/Login -- */
 
@@ -156,6 +167,7 @@ img {
 .btn-acceder {
     margin-top: 15px;
 }
+
 
 /* -- Acceso/Login -- */
 

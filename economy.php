@@ -5,18 +5,19 @@
   Función: proveer el estilo de la web
   Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
 
-  Función: Página general de la aplicación web
+  Función: Página para acceder al menú de opciones de la parte económica
 
 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html lang="es">
-   <head>
 
+   <head>
       <?php
 
         // Ficheros de configuración y nombre de empresa
         include __DIR__ . '/includes/header.php';
         include __DIR__ . '/includes/empresa.php';
+
         // Incluir comprobación de sesión
         include __DIR__ . '/session/comprobarsesion.php';
 
@@ -42,16 +43,28 @@
          </header>
       </div>
       <div class="container menu-index">
-         <div class="col-xs-6 col-sm-2"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='buscarcliente.php'">Consultar/Editar</button></div>
-         <div class="col-xs-6 col-sm-2"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='economy.php'">Economía</button></div>
-         <div class="col-xs-6 col-sm-2"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='datosclientes.php'">Crear</button></div>
-         <div class="col-xs-6 col-sm-2"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='controlusuario.php'">Usuario</button></div>
-         <div class="col-xs-6 col-sm-2"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='acercade.php'">Acerca de...</button></div>
-         <div class="col-xs-6 col-sm-2"><button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='cerrar.php'">Cerrar Sesión</button></div>
-      </div>
-      <div class="container menu-index">
-         <br>
-         <img src="media/fondo-index.png" class="img-rounded">
+        <div class="col-sm-6">
+         <!-- Card control de versiones -->
+         <div class="card card-general card-right">
+            <div class"card-block">
+              <h3 class="card-title">Añadir Resultados</h3>
+              <p class="card-text">Ingresa nuevos datos económicos del mes.</p>
+              <a href="economyadd.php" class="btn btn-primary">Acceder</a>
+              <p></p>
+            </div>
+         </div>
+        </div>
+        <div class="col-sm-6">
+         <!-- Card Tecnología usada -->
+         <div class="card card-general card-left">
+            <div class"card-block">
+              <h3 class="card-title">Consultar Resultados</h3>
+              <p class="card-text">Consulta los datos económicos.</p>
+              <a href="economyview.php" class="btn btn-primary">Acceder</a>
+              <p></p>
+            </div>
+         </div>
+        </div>
       </div>
    </body>
    

@@ -16,6 +16,7 @@ Versión: 5.7.9
    * clientes
    * info
    * usuarios
+   * facturacion
 
 - Campos
    * clientes
@@ -43,3 +44,12 @@ Versión: 5.7.9
       + usuario VARCHAR(45) - NN
       + password VARCHAR(255) - NN
       + nivel INT(11)
+   * facturacion
+      + idfacturacion INT(11) - PK, NN, UQ, AI
+      + fechainicio DATETIME - NN
+      + fechafinal DATETIME - NN
+      + importefacturado INT(11) - NN
+      + importeinvertido INT(11) - NN
+      + importeimpuestos INT(11) - NN
+      + mes VARCHAR(45) - NN
+      + anyo VARCHAR(45) - NN
