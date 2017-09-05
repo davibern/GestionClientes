@@ -2,7 +2,6 @@
 
   Autor: David Bernabé
   E-mail: david.bern.pal@gmail.com
-  Función: proveer el estilo de la web
   Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
 
   Función: Página que devuelve si ha sido actualizado o no el cliente
@@ -12,22 +11,22 @@
 <?php
 
    // Incluimos la clase Modificar cliente
-   include __DIR__ . '/includes/modificarcliente.php';
+   include __DIR__ . '/includes/constumer.php';
 
    // Instanciamos un objeto de modificar cliente
-   $modificarcliente = new ModificarCliente;
+   $editconstumer = new Constumer;
 
    // ModificarCliente contendrá los datos del array asociativo de $_POST que se obtienen de la página editar
-   $modificarcliente->ModificarCliente($_POST);
+   $editconstumer->SetConstumer($_POST);
 
    // Si Modificar cliente no obtuviese datos se muestra error, de lo contrario se indica que el cliente ha sido modificado
-   if($modificarcliente == false) {
+   if($editconstumer == false) {
 
-      $mensaje = "No se ha podido modificar el cliente. Consulta con el administrador.";
+      $message = "No se ha podido modificar el cliente. Consulta con el administrador.";
 
    } else {
      
-      $mensaje = "El cliente ha sido modificado correctamente. <br><br>
+      $message = "El cliente ha sido modificado correctamente. <br><br>
                   <a href='buscarcliente.php'>Buscar otro cliente</a> <br><br>
                   <a href='index.php'>Volver al menú principal</a>";
 
@@ -42,16 +41,16 @@
 
       // Ficheros de configuración y nombre de empresa
       include __DIR__ . '/includes/header.php';
-      include __DIR__ . '/includes/empresa.php';
+      include __DIR__ . '/includes/business.php';
 
       // Incluir comprobación de sesión
       include __DIR__ . '/session/comprobarsesion.php';
 
       // Instanciamos un objeto nuevo de empresa para rescatar el nombre de la peluquería
-      $nombreempresa = new Empresa();
+      $namebusiness = new Business();
 
       // Usamos el método para rescatar nombre de empresa y lo guardamos en otra variable para poder usarla más tarde
-      $empresa = $nombreempresa->getNameBussines();
+      $business = $namebusiness->getNameBusiness();
 
     ?>
    </head>
@@ -64,11 +63,11 @@
       ?>
       <div class="container">
          <header class="header">
-            <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $empresa;?></a></small></h1>
+            <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $business;?></a></small></h1>
          </header>
       </div>
       <div class="container menu-index menu-search">
-         <p><?php echo $mensaje; ?></p>
+         <p><?php echo $message; ?></p>
       </div>
    </body>
    

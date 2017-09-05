@@ -2,7 +2,6 @@
 
   Autor: David Bernabé
   E-mail: david.bern.pal@gmail.com
-  Función: proveer el estilo de la web
   Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
 
   Función: Página para leer el control de versiones
@@ -14,18 +13,18 @@
    <head>
       <?php
 
-        // Ficheros de configuración y nombre de empresa
-        include __DIR__ . '/includes/header.php';
-        include __DIR__ . '/includes/empresa.php';
+      // Ficheros de configuración y nombre de empresa
+      include __DIR__ . '/includes/header.php';
+      include __DIR__ . '/includes/business.php';
 
-        // Incluir comprobación de sesión
-        include __DIR__ . '/session/comprobarsesion.php';
+      // Incluir comprobación de sesión
+      include __DIR__ . '/session/comprobarsesion.php';
 
-        // Instanciamos un objeto nuevo de empresa para rescatar el nombre de la peluquería
-        $nombreempresa = new Empresa();
+      // Instanciamos un objeto nuevo de empresa para rescatar el nombre de la peluquería
+      $namebusiness = new Business();
 
-        // Usamos el método para rescatar nombre de empresa y lo guardamos en otra variable para poder usarla más tarde
-        $empresa = $nombreempresa->getNameBussines();
+      // Usamos el método para rescatar nombre de empresa y lo guardamos en otra variable para poder usarla más tarde
+      $business = $namebusiness->getNameBusiness();
 
       ?>
    </head>
@@ -39,13 +38,20 @@
       ?>
       <div class="container">
          <header class="header">
-             <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $empresa;?></a></small></h1>
+             <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $business;?></a></small></h1>
          </header>
       </div>
       <div class="container menu-index">
          <div class="menu-version menu-option">
              <h1>Control de Versiones</h1>
              <br>
+             <h2>Versión 2.0.2017</h2>
+             <br>
+             <ol>
+                <li>Nueva interfaz gráfica del HOME usando paneles con bootstrap</li>
+                <li>Optimización del código de la biblioteca de controladores</li>
+                <li>Optimización de las páginas de la interfaz</li>
+             </ol>
              <h2>Versión 1.8.2017b</h2>
              <br>
              <ol>

@@ -3,6 +3,12 @@
 
 <h2>Control de Versiones</h2>
 <br>
+<h2>Versión 2.0.2017</h2>
+<ol>
+    <li>Nueva interfaz gráfica del HOME usando paneles con bootstrap</li>
+    <li>Optimización del código de la biblioteca de controladores</li>
+    <li>Optimización de las páginas de la interfaz</li>
+</ol>
 <h2>Versión 1.8.2017b</h2>
 <ol>
     <li>Mostrar a todos los clientes si no se busca por ningún parámetro</li>

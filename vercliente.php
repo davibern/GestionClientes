@@ -2,7 +2,6 @@
 
   Autor: David Bernabé
   E-mail: david.bern.pal@gmail.com
-  Función: proveer el estilo de la web
   Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
 
   Función: Página para ver los registros de los clientes
@@ -11,32 +10,32 @@
 <?php
 
    // Incluir la clase EditarCliente
-   include __DIR__ . '/includes/editarcliente.php';
+   include __DIR__ . '/includes/constumer.php';
 
    // Instanciar un objeto de la clase editar clientes
-   $cliente = new EditarCliente;
+   $constumer = new Constumer;
 
    // Traer el valor del cliente a editar
-   $idcliente = $_GET['id'];
+   $idconstumer = $_GET['id'];
 
    // Crear un objeto nuevo que traiga el cliente a editar usando el método EditClient de EditarCliente
-   $editarcliente = $cliente->EditClient($idcliente);
+   $editconstumer = $constumer->EditClient($idconstumer);
 
    // Recorrer todo el array y guardamos cada elmento del campo en su correspondiente variable
-   foreach ($editarcliente as $elemento) {
-      $id = $elemento['idclientes'];
-      $nombre = $elemento['nombre'];
-      $alias = $elemento['alias'];
-      $movil = $elemento['movil'];
-      $direccion = $elemento['direccion'];
-      $poblacion = $elemento['poblacion'];
-      $provincia = $elemento['provincia'];
-      $codigopostal = $elemento['codigopostal'];
-      $tratamientocapilar = $elemento['tratamientocapilar'];
-      $tratamientocorporal = $elemento['tratamientocorporal'];
-      $observaciones = $elemento['observaciones'];
-      $modificadopor = $elemento['modificadopor'];
-      $fechamodificacion = $elemento['fechamodificacion'];
+   foreach ($editconstumer as $element) {
+      $id = $element['idclientes'];
+      $nombre = $element['nombre'];
+      $alias = $element['alias'];
+      $movil = $element['movil'];
+      $direccion = $element['direccion'];
+      $poblacion = $element['poblacion'];
+      $provincia = $element['provincia'];
+      $codigopostal = $element['codigopostal'];
+      $tratamientocapilar = $element['tratamientocapilar'];
+      $tratamientocorporal = $element['tratamientocorporal'];
+      $observaciones = $element['observaciones'];
+      $modificadopor = $element['modificadopor'];
+      $fechamodificacion = $element['fechamodificacion'];
    }
 
 ?>
@@ -46,18 +45,18 @@
     <head>
      <?php
 
-        // Ficheros de configuración y nombre de empresa
-        include __DIR__ . '/includes/header.php';
-        include __DIR__ . '/includes/empresa.php';
+      // Ficheros de configuración y nombre de empresa
+      include __DIR__ . '/includes/header.php';
+      include __DIR__ . '/includes/business.php';
 
-        // Incluir comprobación de sesión
-        include __DIR__ . '/session/comprobarsesion.php';
+      // Incluir comprobación de sesión
+      include __DIR__ . '/session/comprobarsesion.php';
 
-       // Instanciamos un objeto nuevo de empresa para rescatar el nombre de la peluquería
-       $nombreempresa = new Empresa();
+      // Instanciamos un objeto nuevo de empresa para rescatar el nombre de la peluquería
+      $namebusiness = new Business();
 
-       // Usamos el método para rescatar nombre de empresa y lo guardamos en otra variable para poder usarla más tarde
-       $empresa = $nombreempresa->getNameBussines();
+      // Usamos el método para rescatar nombre de empresa y lo guardamos en otra variable para poder usarla más tarde
+      $business = $namebusiness->getNameBusiness();
 
      ?>
     </head>
@@ -71,7 +70,7 @@
       ?>
       <div class="container">
        <header class="header">
-            <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $empresa;?></a></small></h1>
+            <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $business;?></a></small></h1>
        </header>
       </div>
       <div class="container menu-create">

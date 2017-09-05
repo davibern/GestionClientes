@@ -3,7 +3,6 @@
     /*
         Autor: David Bernabé
         E-mail: david.bern.pal@gmail.com
-        Función: proveer el estilo de la web
         Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
 
         Función: clase padre muestra los datos de la empresa dada de alta en la base de datos como logo de la página
@@ -16,10 +15,7 @@
       
    }
 
-   /**
-    * Clase que obtendrá la versión y el nombre de la empresa
-    */
-   class Empresa extends Conexion {
+   class Business extends Conexion {
 
       // Constructor de la supler clase
       function __construct() {
@@ -29,7 +25,7 @@
       }
 
       // Método que traerá el nombre de la empresa que esté en la base de datos
-      public function getNameBussines() {
+      public function getNameBusiness() {
 
          // Sentencia SQl que trae el nombre de la empresa
          $sql = "SELECT empresa FROM info";
@@ -47,14 +43,14 @@
          $query->closeCursor();
 
          // Obtenemos el valor de la empresa con un foreach
-         foreach($resultado as $elemento) {
+         foreach($resultado as $element) {
 
-            $empresa = $elemento['empresa'];
+            $business = $element['empresa'];
 
          }
 
          // Devolvemos el resultado de la query para la función
-         return $empresa;
+         return $business;
 
          // Cerramos la conexion
          $this->conexion_db = null;

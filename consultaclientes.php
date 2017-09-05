@@ -2,7 +2,6 @@
 
   Autor: David Bernabé
   E-mail: david.bern.pal@gmail.com
-  Función: proveer el estilo de la web
   Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
 
   Función: Página que devuelve los registros del usuario a buscar
@@ -11,11 +10,11 @@
 <?php
 
     // Incluimos la clase Devuelve Clientes
-    include __DIR__ . '/includes/vercliente.php';
+    include __DIR__ . '/includes/constumer.php';
     
     // Creamos un nuevo objeto
-    $clientes = new DevuelveClientes();
-    $paginas = new DevuelveClientes();
+    $constumer = new Constumer();
+    $pages = new Constumer();
 
     // Obtenemos los valores de los campos del formulario anterior, ya sea alias, móvil o letra
     if(isset($_GET["alias"])){
@@ -39,17 +38,17 @@
     if(!empty($alias) && !empty($number)){
 
       // Si está cumplimentado el alias y el móvil busca por alias y móvil y devolverá los resultados por alias y móvil
-      $array_clientes = $clientes->getClientesAliasPhone($alias, $number);
+      $array_constumer = $constumer->getClientesAliasPhone($alias, $number);
 
     }elseif(!empty($alias)){
 
       // Si está cumplimentado el alias busca por alias y devolverá los resultados por alias
-      $array_clientes = $clientes->getClientesAlias($alias);
+      $array_constumer = $constumer->getClientesAlias($alias);
 
     }elseif(!empty($number)){
 
       // Si está cumplimentado el móvil busca por móvil y devolverá los resultados por móvil
-      $array_clientes = $clientes->getClientesPhone($number);
+      $array_constumer = $constumer->getClientesPhone($number);
 
     }elseif(empty($alias) || empty($number)){
 
@@ -57,13 +56,13 @@
 
         // Si se pulsa el botón de cualquier letra se busca por inicial del alias
         $boolabecedario = true;
-        $array_clientes = $clientes->getClientsInitialAlias($letrainicial);
+        $array_constumer = $constumer->getClientsInitialAlias($letrainicial);
 
       } else {
 
         // Si no está ningún campo cumplimentado mostramos todos los registros y creamos flag para controlar el mostrar la capa del abecedario
         $boolabecedario = true;
-        $array_clientes = $clientes->getAllClients();
+        $array_constumer = $constumer->getAllClients();
 
       }
 
@@ -79,7 +78,7 @@
 
       // Ficheros de configuración y nombre de empresa
       include __DIR__ . '/includes/header.php';
-      include __DIR__ . '/includes/empresa.php';
+      include __DIR__ . '/includes/business.php';
       
       // Si el flag del abecedario es verdadero cargamos el fichero de javascript para poner la capa como NO oculta
       if(isset($boolabecedario)){
@@ -92,10 +91,10 @@
       include __DIR__ . '/session/comprobarsesion.php';
 
       // Instanciamos un objeto nuevo de empresa para rescatar el nombre de la peluquería
-      $nombreempresa = new Empresa();
+      $namebusiness = new Business();
 
       // Usamos el método para rescatar nombre de empresa y lo guardamos en otra variable para poder usarla más tarde
-      $empresa = $nombreempresa->getNameBussines();
+      $business = $namebusiness->getNameBusiness();
 
     ?>
   </head>
@@ -110,7 +109,7 @@
 
     <div class="container">
       <header class="header">
-        <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $empresa;?></a></small></h1>
+        <h1>Gestión Clientes <small><a href="index.php" class="non-format"><?php echo $business;?></a></small></h1>
       </header>
     </div>
       <div class="container menu-search capa-oculta">
@@ -159,31 +158,31 @@
 
         <?php
 
-          foreach($array_clientes as $elemento):
+          foreach($array_constumer as $element):
 
         ?>
 
         <tr>
           <td>
-            <?php echo $elemento->alias ?>
+            <?php echo $element->alias ?>
           </td>
           <td>
-            <?php echo $elemento->direccion ?>
+            <?php echo $element->direccion ?>
           </td>
           <td>
-            <?php echo $elemento->movil ?>
+            <?php echo $element->movil ?>
           </td>
           <td>
-            <?php echo $elemento->tratamientocapilar ?>
+            <?php echo $element->tratamientocapilar ?>
           </td>
           <td>
-            <?php echo $elemento->tratamientocorporal ?>
+            <?php echo $element->tratamientocorporal ?>
           </td>
           <td>
-            <a href='vercliente.php?id=<?php echo $elemento->idclientes ?>'><span class='glyphicon glyphicon-search'></span></a>
+            <a href='vercliente.php?id=<?php echo $element->idclientes ?>'><span class='glyphicon glyphicon-search'></span></a>
           </td>
           <td>
-            <a href='editar.php?id=<?php echo $elemento->idclientes ?>'><span class='glyphicon glyphicon-edit'></span></a>
+            <a href='editar.php?id=<?php echo $element->idclientes ?>'><span class='glyphicon glyphicon-edit'></span></a>
           </td>
         </tr>
 

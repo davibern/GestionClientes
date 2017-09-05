@@ -104,19 +104,17 @@
 
                 } else {
 
-                    $year = (int)$year;
-
                     // Guardamos la sentencia sql
-                    $sql = 'SELECT * FROM facturacion WHERE anyo = "' . $year . '"';
+                    $sql = 'SELECT * FROM facturacion WHERE anyo = ?';
 
                     // Creamos variable que hereda de conexión para preparar la consulta guardada en $sql
                     $query = $this->conexion_db->prepare($sql);
 
                     // Ligamos el parámetro de la consulta preparada
-                    //$query->bindParam(1, $year, PDO::PARAM_INT);
+                    $query->bindParam(1, $year, PDO::PARAM_INT);
 
                     // Ejecutamos la consulta
-                    $query->execute(array());
+                    $query->execute();
 
                     // Guardamos la consulta en una variable para usarla más tarde
                     $resultado = $query->fetchAll(PDO::FETCH_OBJ);

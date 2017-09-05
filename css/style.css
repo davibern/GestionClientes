@@ -23,6 +23,10 @@
     text-shadow: 2px 2px 2px black;
     color: white;
     font-size: 3.5em;
+    background-image: url("../media/fondo_index.png");
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    
 }
 
 .menu-index {
