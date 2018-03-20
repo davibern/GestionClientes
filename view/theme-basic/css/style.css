@@ -1,0 +1,102 @@
+/*
+    Autor: David Bernabé
+    E-mail: david.bern.pal@gmail.com
+    Función: proveer el estilo para el tema basico
+    Licencia: Apache License 2.0 || http://www.apache.org/licenses/LICENSE-2.0
+*/
+
+/* HEADER */
+.header h1 {
+    text-align: center;
+    padding: 50px;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    font-size: 3.5em;
+    background-image: url("../media/fondo_index.png");
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+a.non-format {
+    color: grey;
+    text-shadow: 2px 2px 2px black;
+}
+
+a.non-format:link {
+    text-decoration: none;
+}
+
+a.non-format:hover {
+    text-decoration: none;
+}
+
+a.non-format:active {
+    text-decoration: none;
+}
+
+a.non-format:visited {
+    text-decoration: none;
+}
+
+/* LOGIN */
+
+.content-nav {
+    background: #D8D8D8;
+    border-radius: 25px;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.login h2 {
+    padding-bottom: 0.5em;
+}
+
+/* REGISTER */
+
+.register {
+    background: #D8D8D8;
+    border-radius: 25px;
+    padding: 25px;
+    margin-top: 25px;
+    width: 18%;
+}
+
+/* USERS */
+
+.icon-user {
+    font-size: 3em;
+    text-align: center;
+}
+
+.position-cards {
+    padding-top: 25px;
+}
+
+/* TABLE DATA */
+
+.center-text {
+    text-align: center;
+}
+
+.table-position {
+    padding: 20px;
+}
+
+/* CUSTOMERS */
+
+.customer {
+    width: auto;
+    height: auto;
+}
+
+/* HOME-LOGIN */
+
+.background-home {
+    background-color: lightblue;
+    background-image: url("/GestionClientes/view/theme-basic/media/fondo_home.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    text-align: center;
+    border-radius: 10px;
+}

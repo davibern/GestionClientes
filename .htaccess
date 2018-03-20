@@ -1,20 +1,8 @@
-#Autor: David Bernabé
-#E-mail: david.bern.pal@gmail.com
-#Licencia: Apache 2.0
-#
-#RewriteEngine
-<IfModule mod_rewrite.c>
-    Options +FollowSymLinks
-    RewriteEngine On
-    RewriteCond %{SCRIPT_FILENAME} !-d
-    RewriteCond %{SCRIPT_FILENAME} !-f
-    RewriteRule ^vercliente/(\d*)$ /vercliente.php?id=$1
-</IfModule>
+# Configuracion del acceso al directorio y las urls de la pagina
 
-#Error
-RewriteEngine On
-ErrorDocument 400 /error.php
-ErrorDocument 401 /error.php
-ErrorDocument 403 /error.php
-ErrorDocument 404 /error.php
-ErrorDocument 500 /error.php
+# Denegar el acceso al listado de directorios y ficheros del servidor
+ Options All -indexes
+
+# Url amigables
+ RewriteEngine On
+ RewriteRule ^(\w+)$ index.php?do=$1

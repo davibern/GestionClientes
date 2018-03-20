@@ -3,6 +3,20 @@
 
 <h2>Control de Versiones</h2>
 <br>
+<h2>Versión 3.0.1803</h2>
+<ol>
+    <li>Cambiar el sistema de la lógica del backend por uno de <i>Modelo, Vista, Controlador (MVC)</i></li>
+    <li>Rediseñar por completo la interfaz de usuario (frontend)</li>
+    <li>Validar campos de los formularios de clientes y usuarios mediante Javascript</li>
+    <li>Cambiar el sistema de iconos por FontAwesome</li>
+    <li>Control de urls por .htaccess</li>
+    <li>Nuevo sistema para dar de alta usuarios</li>
+    <li>Nuevo sistema para modificar al usuario</li>
+    <li>Cambiar el módulo de acceso</li>
+    <li>Actualizar Bootstrap por la nueva versión 4.0</li>
+    <li>Cambiar la interfaz de información por paneles tabuladores usando bootstrap</li>
+    <li>Nuevo sistema para editar los datos económicos</li>
+</ol>
 <h2>Versión 2.0.2017</h2>
 <ol>
     <li>Nueva interfaz gráfica del HOME usando paneles con bootstrap</li>
