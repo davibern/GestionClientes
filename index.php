@@ -3,7 +3,7 @@
     /**
     *  Gestion Clientes Peluqueria
     *
-    * @author		David Bernabe
+    * @author		DavidBP.com
     * @git          https://github.com/DavidBPCode/GestionClientes
     * @version      3.0.1803
     * 
