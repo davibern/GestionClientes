@@ -3,7 +3,7 @@
     /**
     *  Gestion Clientes Peluqueria
     *
-    * @author		DavidBP.com
+    * @author       DavidBP.com
     * @git          https://github.com/DavidBPCode/GestionClientes
     * @version      3.0.1803
     * 
@@ -12,7 +12,7 @@
     # Limpiar cabeceras
     @ob_start();
 
-    # Ficheros necesarios para cargar el modelo MVC
+    # Ficheros necesarios para cargar MVC
     require_once "controller/controller.php";
     require_once "model/urlmodel.class.php";
     require_once "model/query.class.php";
