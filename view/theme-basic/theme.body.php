@@ -1,7 +1,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <h1>Gestión Clientes <small><a href="index.php" class="non-format">Elena Baglietto</a></small></h1>
+            <h1>Gestión Clientes Peluquería <small><a href="index.php" class="non-format">Elena</a></small></h1>
         </div>
     </header>
 
