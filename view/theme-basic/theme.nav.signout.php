@@ -4,7 +4,5 @@
     # Por último salimos del script para evitar código malicioso
     session_start();
     session_destroy();
-    
-?>
 
-<h1>Sing Out!</h1>
+    header("location:index");

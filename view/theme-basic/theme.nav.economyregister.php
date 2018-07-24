@@ -72,7 +72,7 @@
 
         if($_GET['do'] == "committed") {
 
-            echo "<br><br>Mes registrado correctamente.";
+            echo '<script type="text/javascript">registerEconomy();</script>';
 
         }
 

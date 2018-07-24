@@ -1,5 +1,8 @@
 /*===============================================
             Validar Nuevo Registro
+            @name:      DavidBP
+            @date:      18/04/2018
+            @version:   2.0.1804
 ===============================================*/
 
 function validateRegister() {
@@ -17,7 +20,12 @@ function validateRegister() {
 
         if (caracters > 5) {
 
-            alert("Escriba por favor menos de 6 caracteres.");
+            swal({
+                title:  "Longitud del Nombre",
+                text:   "El nombre no debe superar los 6 caracteres.",
+                icon:   "warning",
+                type:   "success"
+            });
 
             return false;
 
@@ -25,7 +33,12 @@ function validateRegister() {
 
         if(!regex.test(user)) {
 
-            alert("No use caracteres especiales en el nombre.");
+            swal({
+                title:  "Caracteres Especiales",
+                text:   "No uses caracteres especiales tales como /#%$;@...",
+                icon:   "warning",
+                type:   "success"
+            });
 
             return false;
 
@@ -41,7 +54,12 @@ function validateRegister() {
 
         if (caracters < 6) {
 
-            alert("La contraseña tiene que tener mas de seis caracteres.");
+            swal({
+                title:  "Longitud de la Contraseña",
+                text:   "La contraseña tiene que tiener más de seis caracteres.",
+                icon:   "warning",
+                type:   "success"
+            });
 
             return false;
 
@@ -49,7 +67,12 @@ function validateRegister() {
 
         if(!regex.test(pass)) {
 
-            alert("Usa al menos una mayuscula, una minuscula y numeros.");
+            swal({
+                title:  "Contraseña Fuerte",
+                text:   "La contraseña tiene que tener al menos una mayúscula, una minúscula y números.",
+                icon:   "warning",
+                type:   "success"
+            });
 
             return false;
 
@@ -64,7 +87,12 @@ function validateRegister() {
 
         if(!regex.test(email)) {
 
-            alert("Usa en el dato del correo electronico la arroba.");
+            swal({
+                title:  "La @ del E-mail",
+                text:   "La dirección de correo electrónico debe tener una arroba (@).",
+                icon:   "warning",
+                type:   "success"
+            });
 
             return false;
 
@@ -75,7 +103,12 @@ function validateRegister() {
     /* Validar terminos */
     if(!terms) {
 
-        alert("No has aceptado las condiciones del registro.");
+        swal({
+            title:  "Aceptar Condiciones",
+            text:   "No has aceptado las condiciones de uso de la plataforma.",
+            icon:   "warning",
+            type:   "success"
+        });
 
         document.querySelector("#userregister").value = user;
         document.querySelector("#passregister").value = pass;

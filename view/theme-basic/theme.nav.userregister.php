@@ -51,7 +51,7 @@
 
         if($_GET['do'] == "committed") {
 
-            echo "<br><br>Usuario registrado correctamente.";
+            echo '<script type="text/javascript">registerUser();</script>';
 
         }
 

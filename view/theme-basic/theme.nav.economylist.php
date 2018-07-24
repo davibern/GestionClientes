@@ -48,7 +48,7 @@
     if (isset($_GET['do'])) {
 
         if($_GET['do'] == "updated") {
-            echo "<br><br>Mes actualizado correctamente.";
+            echo '<script type="text/javascript">registerEconomy();</script>';
         }
         
     }

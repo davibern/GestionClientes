@@ -47,7 +47,7 @@
     if (isset($_GET['do'])) {
 
         if($_GET['do'] == "updated") {
-            echo "<br><br>Usuario actualizado correctamente.";
+            echo '<script type="text/javascript">updateUser();</script>';
         }
         
     }

@@ -1,5 +1,8 @@
 /*===============================================
             Validar Nuevo Login
+            @name:      DavidBP
+            @date:      18/04/2018
+            @version:   2.0.1804
 ===============================================*/
 
 function validateLogin() {
@@ -14,7 +17,12 @@ function validateLogin() {
 
         if(caracters > 5) {
 
-            alert("Escriba por favor menos de 6 caracteres.");
+            swal({
+                title:  "Longitud del Nombre",
+                text:   "El nombre no debe superar los 6 caracteres.",
+                icon:   "warning",
+                type:   "success"
+            });
 
             return false;
 
@@ -22,7 +30,12 @@ function validateLogin() {
 
         if(!regex.test(user)) {
 
-            alert("No use caracteres especiales en el nombre.");
+            swal({
+                title:  "Caracteres Especiales",
+                text:   "No uses caracteres especiales tales como /#%$;@...",
+                icon:   "warning",
+                type:   "success"
+            });
 
             return false;
 

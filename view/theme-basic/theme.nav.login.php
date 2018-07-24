@@ -24,28 +24,30 @@
             </div>
         </div>
 
+        <?php
+
+            # Creamos un nuevo objeto de controlador para lanzar el metodo loginUserController
+            # Este metodo llevara los datos a loginUserModel que devolvera si hay o no usuario
+            # Y con los datos el controlador enviara al usuario a la zona o mantendra al mismo en la pantalla del login
+
+            $login = new Controller();
+            $login->loginUserController();
+
+            # Comprobamos que la variable $_GET['do]
+            if (isset($_GET['do'])) {
+
+                if($_GET['do'] == "errorlogin") {
+                    echo '<div class="alert alert-warning" role="alert">El usuario o contraseña no coinciden</div>';
+                }
+
+                if($_GET['do'] == "captcha") {
+                    echo '<div class="alert alert-warning" role="alert">Captcha</div>';
+                }
+            }
+
+        ?>
+
         <button class="btn btn-primary btn-block" type="submit">Iniciar Sesión</button>
 
     </form>
 </div>
-
-<?php
-
-    # Creamos un nuevo objeto de controlador para lanzar el metodo loginUserController
-    # Este metodo llevara los datos a loginUserModel que devolvera si hay o no usuario
-    # Y con los datos el controlador enviara al usuario a la zona o mantendra al mismo en la pantalla del login
-
-    $login = new Controller();
-    $login->loginUserController();
-
-    # Comprobamos que la variable $_GET['do]
-    if (isset($_GET['do'])) {
-
-        if($_GET['do'] == "errorlogin") {
-            echo "<br><br>Fallo al ingresar el usuario y contraseña.";
-        }
-
-        if($_GET['do'] == "captcha") {
-            echo "<br><br>Se mostraria el captcha.";
-        }
-    }

@@ -1,5 +1,8 @@
 /*===============================================
             Validar Actualizacion Registro
+            @name:      DavidBP
+            @date:      18/04/2018
+            @version:   2.0.1804
 ===============================================*/
 
 function validateUpdater() {
@@ -16,7 +19,12 @@ function validateUpdater() {
 
         if(caracters > 5) {
 
-            alert("Escriba por favor menos de 6 caracteres.");
+            swal({
+                title:  "Longitud del Nombre",
+                text:   "El nombre no debe superar los 6 caracteres.",
+                icon:   "warning",
+                type:   "success"
+            });
 
             return false;
 
@@ -24,7 +32,12 @@ function validateUpdater() {
 
         if(!regex.test(user)) {
 
-            alert("No use caracteres especiales en el nombre.");
+            swal({
+                title:  "Caracteres Especiales",
+                text:   "No uses caracteres especiales tales como /#%$;@...",
+                icon:   "warning",
+                type:   "success"
+            });
 
             return false;
 
@@ -40,7 +53,12 @@ function validateUpdater() {
 
         if(caracters < 6) {
 
-            alert("La contraseña tiene que tener mas de seis caracteres en la contraseña.");
+            swal({
+                title:  "Longitud de la Contraseña",
+                text:   "La contraseña tiene que tiener más de seis caracteres.",
+                icon:   "warning",
+                type:   "success"
+            });
 
             return false;
 
@@ -48,7 +66,12 @@ function validateUpdater() {
 
         if(!regex.test(pass)) {
 
-            alert("Usa al menos una mayuscula, una minuscula y numeros en la contraseña.");
+            swal({
+                title:  "Contraseña Fuerte",
+                text:   "La contraseña tiene que tener al menos una mayúscula, una minúscula y números.",
+                icon:   "warning",
+                type:   "success"
+            });
 
             return false;
 
@@ -63,7 +86,12 @@ function validateUpdater() {
 
         if (!regex.test(email)) {
 
-            alert("Usa en el dato del correo electronico la arroba.");
+            swal({
+                title:  "La @ del E-mail",
+                text:   "La dirección de correo electrónico debe tener una arroba (@).",
+                icon:   "warning",
+                type:   "success"
+            });
 
             return false;
 

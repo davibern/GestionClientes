@@ -154,6 +154,7 @@
           <li>Base Datos: <a href="https://www.mysql.com/" target="_blank">MySQL</a></li>
           <li>Framework CSS: <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
           <li>Framework Javascript: <a href="https://jquery.com/" target="_blank">jQuery</a></li>
+          <li>Sweet Alerts: <a href="https://sweetalert.js.org/" target="_blank">Sweet Alerts</a></li>
           <li>Iconos: <a href="https://fontawesome.com/" target="_blank">FontAwesome</a></li>
           <li>Soporte: <a href="https://es.stackoverflow.com/" target="_blank">StackOverflow ES</a></li>
         </ol>

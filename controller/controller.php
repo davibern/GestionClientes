@@ -5,11 +5,12 @@
     *
     * @author       Davidbp.com
     * @git          https://github.com/DavidBPCode/GestionClientes
-    * @version      3.0.1803
+    * @version      3.1.1803
     * @created      03/03/2018
-    * @modified     -
+    * @modified     18/04/2018
     * @function     Se recogen lo datos de la vista, se guardan en una matriz o variable y dichos datos se envian al modelo para que sean
     *               tatados en la base de datos
+    * @newversio    Se incluyen referencias a las alertas suaves de SweetAlerts para mejorar la experiencia de usuario
     */
 
      Class Controller {
@@ -72,6 +73,7 @@
                             session_start();
 
                             $_SESSION['validate'] = true;
+                            $_SESSION['name'] = $_POST['userlogin'];
 
                             # Pasar a 0 el numero de intentos si se hace login satisfactoriamente
                             $datacontroller = array("user"=>$_POST['userlogin'], "newchecklogin"=>0);
@@ -279,8 +281,7 @@
 
                 if($return == "success") {
 
-                   //header("location:index.php");
-                   echo "El cliente ha sido actualizado con éxito.";
+                   echo '<script type="text/javascript">updateCustomer();</script>';
 
                 } else {
 
@@ -341,7 +342,7 @@
 
                 if($return == 'success') {
 
-                    header('location:customerslist');
+                    echo '<script type="text/javascript">deleteCustomer();</script>';
 
                 } 
 
@@ -427,7 +428,7 @@
 
                 if($return == 'success') {
 
-                    header('location:userslist');
+                    echo '<script type="text/javascript">deleteUser();</script>';
 
                 }
 
@@ -493,7 +494,7 @@
 
                 if($return == "success") {
 
-                    header("location:committed");
+                    echo '<script type="text/javascript">registerEconomy();</script>';
 
                 } else {
 
@@ -591,8 +592,7 @@
 
                 if($return == "success") {
 
-                   //header("location:index.php");
-                   echo "El mes ha sido actualizado con éxito.";
+                   echo '<script type="text/javascript">updateEconomy();</script>';
 
                 } else {
 
@@ -618,7 +618,7 @@
 
                 if($return == 'success') {
 
-                    header('location:economylist');
+                    echo '<script type="text/javascript">deleteEconomy();</script>';
 
                 }
 

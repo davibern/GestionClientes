@@ -14,6 +14,9 @@
 ?>
 
 <div class="container">
+    <div clas="row">
+        <h1 class="text-center">Usuario Conectado: <?php echo $_SESSION['name']; ?></h2>
+    </div>
     <div class="background-home">
     </div>
 </div>
