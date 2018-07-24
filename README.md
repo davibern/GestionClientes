@@ -3,6 +3,11 @@
 
 <h2>Control de Versiones</h2>
 <br>
+<h2>Versión 3.1.1807</h2>
+<br>
+<ol>
+    <li>Corrección de errores</i></li>
+</ol>
 <h2>Versión 3.0.1803</h2>
 <ol>
     <li>Cambiar el sistema de la lógica del backend por uno de <i>Modelo, Vista, Controlador (MVC)</i></li>
