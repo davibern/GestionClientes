@@ -2,7 +2,6 @@
 <h1>Programa para gestionar clientes de Peluquería</h1>
 
 <h2>Control de Versiones</h2>
-<br>
 <h2>Versión 3.1.1807</h2>
 <br>
 <ol>
